@@ -1,15 +1,60 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
-      Truco
-    </ion-title>
+    <ion-title> Truco </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-button shape="round" fill="outline" color="danger">1</ion-button>
-  <ion-button shape="round" fill="outline" color="danger">3</ion-button>
-  <ion-button shape="round" fill="outline" color="danger">6</ion-button>
-  <ion-button shape="round" fill="outline" color="danger">9</ion-button>
-  <ion-button shape="round" fill="outline" color="danger">12</ion-button>
-  </ion-content>
+  <ion-row>
+    <ion-col>
+      <ion-button shape="round" fill="solid" color="danger" size="small"
+        >1</ion-button
+      >
+    </ion-col>
+    <ion-col>
+      <ion-button shape="round" fill="solid" color="danger" size="small"
+        >3</ion-button
+      >
+    </ion-col>
+    <ion-col>
+      <ion-button shape="round" fill="solid" color="danger" size="small"
+        >6</ion-button
+      >
+    </ion-col>
+    <ion-col>
+      <ion-button shape="round" fill="solid" color="danger" size="small"
+        >9</ion-button
+      >
+    </ion-col>
+    <ion-col>
+      <ion-button shape="round" fill="solid" color="danger" size="small"
+        >12</ion-button
+      >
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col size="6" class="column">
+      <ion-row class="row-center">
+        <ion-button shape="round" fill="solid" color="dark">+</ion-button>
+      </ion-row>
+      <ion-row class="row-center">
+        <ion-label>0</ion-label>
+      </ion-row>
+      <ion-row class="row-center">
+        <ion-button shape="round" fill="solid" color="dark">-</ion-button>
+      </ion-row>
+      <ion-row></ion-row>
+    </ion-col>
+    <ion-col size="6" class="column">
+     <ion-row class="row-center">
+        <ion-button shape="round" fill="solid" color="dark">+</ion-button>
+      </ion-row>
+      <ion-row class="row-center">
+        <ion-label>0</ion-label>
+      </ion-row>
+      <ion-row class="row-center">
+        <ion-button shape="round" fill="solid" color="dark">-</ion-button>
+      </ion-row>
+    </ion-col>
+  </ion-row>
+</ion-content>
