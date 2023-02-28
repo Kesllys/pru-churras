@@ -9,3 +9,23 @@
 .column{
   padding: 50px;
 }
+
+.background
+{
+  height: 100%;
+  width: 100%;
+  background: url("../../assets/fundo-truco.jpg");
+  background-size: cover;
+  filter: opacity(20%);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.container
+{
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}

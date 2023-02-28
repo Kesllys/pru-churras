@@ -5,6 +5,9 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
+  <div class="background"></div>
+
+  <div class="container">
   <ion-row>
     <ion-col>
       <ion-button shape="round" fill="solid" color="danger" size="small"
@@ -43,7 +46,6 @@
       <ion-row class="row-center">
         <ion-button shape="round" fill="solid" color="dark">-</ion-button>
       </ion-row>
-      <ion-row></ion-row>
     </ion-col>
     <ion-col size="6" class="column">
      <ion-row class="row-center">
@@ -56,5 +58,24 @@
         <ion-button shape="round" fill="solid" color="dark">-</ion-button>
       </ion-row>
     </ion-col>
+  </ion-row>
+
+  <ion-row>
+  <ion-col size="6" class="column">
+    <ion-row class="row-center">
+      <ion-button shape="round" fill="solid" color="dark" size="default">Time 1</ion-button>
+    </ion-row>
+    <ion-row class="row-center">
+      <ion-label>0</ion-label>
+    </ion-row>
+  </ion-col>
+  <ion-col size="6" class="column">
+    <ion-row class="row-center">
+      <ion-button shape="round" fill="solid" color="dark" size="default">Time 2</ion-button>
+    </ion-row>
+    <ion-row class="row-center">
+      <ion-label>0</ion-label>
+    </ion-row>
+  </ion-col>
   </ion-row>
 </ion-content>
