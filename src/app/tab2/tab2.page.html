@@ -1,37 +1,41 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title> Truco </ion-title>
+    <ion-title class="ion-text-center">Marcador de Truco </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <div class="background"></div>
+ <div class="imagem"></div>
 
-  <div class="container">
+    <ion-footer>
+      <ion-toolbar color="dark">
+        <h1 class="ion-text-center">Valendo: </h1>
+      </ion-toolbar>
+    </ion-footer>
+
   <ion-row>
     <ion-col>
-      <ion-button shape="round" fill="solid" color="danger" size="small"
-        >1</ion-button
+      <ion-fab-button shape="round" fill="solid" color="danger" size="small"
+        >1</ion-fab-button
       >
     </ion-col>
     <ion-col>
-      <ion-button shape="round" fill="solid" color="danger" size="small"
-        >3</ion-button
+      <ion-fab-button shape="round" fill="solid" color="danger" size="small"
+        >3</ion-fab-button
       >
     </ion-col>
     <ion-col>
-      <ion-button shape="round" fill="solid" color="danger" size="small"
-        >6</ion-button
+      <ion-fab-button shape="round" fill="solid" color="danger" size="small"
+        >6</ion-fab-button>
+    </ion-col>
+    <ion-col>
+      <ion-fab-button shape="round" fill="solid" color="danger" size="small"
+        >9</ion-fab-button
       >
     </ion-col>
     <ion-col>
-      <ion-button shape="round" fill="solid" color="danger" size="small"
-        >9</ion-button
-      >
-    </ion-col>
-    <ion-col>
-      <ion-button shape="round" fill="solid" color="danger" size="small"
-        >12</ion-button
+      <ion-fab-button shape="round" fill="solid" color="danger" size="small"
+        >12</ion-fab-button
       >
     </ion-col>
   </ion-row>
@@ -79,3 +83,11 @@
   </ion-col>
   </ion-row>
 </ion-content>
+
+  <ion-footer>
+    <ion-toolbar color="dark">
+      <h1 class="ion-text-center">Resetar</h1>
+    </ion-toolbar>
+  </ion-footer>
+
+
