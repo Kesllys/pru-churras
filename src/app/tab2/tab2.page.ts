@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { AlertController, ToastController } from '@ionic/angular';
+import { threadId } from 'worker_threads';
 
 @Component({
   selector: 'app-tab2',
@@ -12,6 +13,7 @@ export class Tab2Page {
   numeroT2 = 0;
   pontost1 = 0;
   pontost2 = 0;
+  resultado: any;
 
   numeroValendo(valor: number) {
     this.valendo = valor;
@@ -41,7 +43,7 @@ export class Tab2Page {
       this.numeroT2 += this.valendo;
     }
     this.valendo = 1;
-    this.resultado();
+    this.calcResultado();
 
   }
 
@@ -61,6 +63,8 @@ export class Tab2Page {
     if(this.numeroT2 < 0){
       this.numeroT2 = 0;
     }
+
+    this.calcResultado();
   }
 
   calcResultado(){
@@ -118,4 +122,14 @@ async presentToast(message : string) {
 
   await toast.present();
 }
+
+resetar()
+{
+  this.valendo = 1;
+  this.numeroT1 = 0;
+  this.numeroT2 = 0;
+  this.pontost1 = 0;
+  this.pontost2 = 0;
+}
+
 }

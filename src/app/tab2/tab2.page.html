@@ -9,32 +9,32 @@
 
     <ion-footer>
       <ion-toolbar color="dark">
-        <h1 class="ion-text-center">Valendo: </h1>
+        <h1 class="ion-text-center">Valendo: {{valendo}} </h1>
       </ion-toolbar>
     </ion-footer>
 
   <ion-row>
     <ion-col>
-      <ion-fab-button shape="round" fill="solid" color="danger" size="small"
+      <ion-fab-button shape="round" fill="solid" color="danger" size="small" (click)="numeroValendo(1)"
         >1</ion-fab-button
       >
     </ion-col>
     <ion-col>
-      <ion-fab-button shape="round" fill="solid" color="danger" size="small"
+      <ion-fab-button shape="round" fill="solid" color="danger" size="small" (click)="numeroValendo(3)"
         >3</ion-fab-button
       >
     </ion-col>
     <ion-col>
-      <ion-fab-button shape="round" fill="solid" color="danger" size="small"
+      <ion-fab-button shape="round" fill="solid" color="danger" size="small" (click)="numeroValendo(6)"
         >6</ion-fab-button>
     </ion-col>
     <ion-col>
-      <ion-fab-button shape="round" fill="solid" color="danger" size="small"
+      <ion-fab-button shape="round" fill="solid" color="danger" size="small" (click)="numeroValendo(9)"
         >9</ion-fab-button
       >
     </ion-col>
     <ion-col>
-      <ion-fab-button shape="round" fill="solid" color="danger" size="small"
+      <ion-fab-button shape="round" fill="solid" color="danger" size="small" (click)="numeroValendo(12)"
         >12</ion-fab-button
       >
     </ion-col>
@@ -42,24 +42,24 @@
   <ion-row>
     <ion-col size="6" class="column">
       <ion-row class="row-center">
-        <ion-button shape="round" fill="solid" color="dark">+</ion-button>
+        <ion-button shape="round" fill="solid" color="dark" (click)="somarAposta(1)">+</ion-button>
       </ion-row>
       <ion-row class="row-center">
-        <ion-label>0</ion-label>
+        <ion-label>{{numeroT1}}</ion-label>
       </ion-row>
       <ion-row class="row-center">
-        <ion-button shape="round" fill="solid" color="dark">-</ion-button>
+        <ion-button shape="round" fill="solid" color="dark" (click)="subtrairAposta(1)">-</ion-button>
       </ion-row>
     </ion-col>
     <ion-col size="6" class="column">
      <ion-row class="row-center">
-        <ion-button shape="round" fill="solid" color="dark">+</ion-button>
+        <ion-button shape="round" fill="solid" color="dark" (click)="somarAposta(2)">+</ion-button>
       </ion-row>
       <ion-row class="row-center">
-        <ion-label>0</ion-label>
+        <ion-label>{{numeroT2}}</ion-label>
       </ion-row>
       <ion-row class="row-center">
-        <ion-button shape="round" fill="solid" color="dark">-</ion-button>
+        <ion-button shape="round" fill="solid" color="dark"(click)="subtrairAposta(2)">-</ion-button>
       </ion-row>
     </ion-col>
   </ion-row>
@@ -70,7 +70,7 @@
       <ion-button shape="round" fill="solid" color="dark" size="default">Time 1</ion-button>
     </ion-row>
     <ion-row class="row-center">
-      <ion-label>0</ion-label>
+      <ion-label>{{pontost1}}</ion-label>
     </ion-row>
   </ion-col>
   <ion-col size="6" class="column">
@@ -78,14 +78,14 @@
       <ion-button shape="round" fill="solid" color="dark" size="default">Time 2</ion-button>
     </ion-row>
     <ion-row class="row-center">
-      <ion-label>0</ion-label>
+      <ion-label>{{pontost2}}</ion-label>
     </ion-row>
   </ion-col>
   </ion-row>
 </ion-content>
 
   <ion-footer>
-    <ion-toolbar color="dark">
+    <ion-toolbar color="dark" (click)="resetar()">
       <h1 class="ion-text-center">Resetar</h1>
     </ion-toolbar>
   </ion-footer>
