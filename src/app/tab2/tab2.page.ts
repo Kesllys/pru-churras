@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { AlertController, ToastController } from '@ionic/angular';
 
 @Component({
   selector: 'app-tab2',
@@ -6,16 +7,20 @@ import { Component } from '@angular/core';
   styleUrls: ['tab2.page.scss']
 })
 export class Tab2Page {
-  valendo = '';
-  numeros = '';
-  aposta = '';
-  times = '';
-  memoria = '';
+  valendo = 1;
+  numerost1 = 0;
+  numerost2 = 0;
+  pontost1 = 0;
+  pontost2 = 0;
+  presentToast: any;
 
-  constructor() {}
+  numeroValendo(valor: number) {
+    this.valendo = valor;
 
-  Valendo() {
-    
+    if(this.valendo === 3){
+      this.presentToast('Truco');
+    }
   }
+
 
 }
